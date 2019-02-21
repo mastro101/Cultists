@@ -29,7 +29,7 @@ public class MovePoint : MonoBehaviour
         }
         if (playerInside == counter.Cultisti.Length && counter.Cultisti.Length > 1)
             winManager.Win = true;
-        else if (playerInside < counter.Cultisti.Length)
+        else if (playerInside < counter.Cultisti.Length || counter.Cultisti.Length <= 1)
             winManager.Win = false;
     }
 
